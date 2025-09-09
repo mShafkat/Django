@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'payments',
     'listing_details',
     'user_authentication',
+    'product',
+    'review',
 ]
 
 MIDDLEWARE = [

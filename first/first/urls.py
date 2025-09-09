@@ -16,9 +16,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from payments import views
+from payments import views as pv
+from product import views as prv
+from review import views as rev
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.django),
+    path('',pv.home_page),
+    path('b',pv.bkash),
+    path('math',pv.add),
+    path('name',pv.format),
+    path('pd',prv.cake),
+    path('cr',rev.customer),
 ]
