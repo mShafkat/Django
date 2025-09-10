@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+
 
 # Create your views here.
-def cake(request):
-    return HttpResponse("This is a cake page.")
+def product(request):
+    return render(request, "product/product.html")
