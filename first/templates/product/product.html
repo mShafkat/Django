@@ -1,5 +1,7 @@
 {% extends "common code/base.html" %}
 
+{% load static %}
+
 {% block title %} Product Page {% endblock title %}
 
 {% block content %} 
@@ -7,3 +9,13 @@
     <h1> Product Page </h1>
 
 {% endblock content %}
+
+
+ {% block image %}
+    <img src="{% static 'images/images.jpeg' %}" alt="">
+    {% endblock image %}
+
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/style1.css' %}">
+    {% endblock css %}
