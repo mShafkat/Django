@@ -3,8 +3,7 @@ from.import views
 
 
 urlpatterns = [
-    path('cus',views.customer),
-    
+    path('cus',views.customer,name ='reviewpage'),
 
 ]
    
